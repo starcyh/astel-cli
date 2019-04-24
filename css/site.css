@@ -1,0 +1,249 @@
+html{font:14px/20px Tahoma,Helvetica Neue,\5FAE\8F6F\96C5\9ED1,\5b8b\4f53;-webkit-text-size-adjust:none;-webkit-font-smoothing:subpixel-antialiased}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,select,button,p,blockquote,th,td,span{margin:0;padding:0;}
+input,textarea,select,button{margin:0;padding:0;outline:none;border:0;}
+input,textarea,select,button{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%;}
+input[type="button"],input[type="submit"],select,button{cursor:pointer;}
+body{background: #59ab5c;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:focus,input:focus,textarea:focus{outline: none;}
+table{border-collapse:collapse; border-spacing:0;}
+fieldset, img {border:none;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ul,ol,li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;font-family:Tahoma,\5FAE\8F6F\96C5\9ED1;}
+em,i{font-style:normal;}
+a,area { blr:expression(this.onFocus=this.blur()) }
+a:focus { outline: none; }
+.fl{float: left;}
+.rg{float: right;}
+.clr:after{clear:both; display:block; visibility:hidden; height:0; line-height:0; content:'';}
+.clr{zoom:1;}
+/* 背景repeat可以加在这里 */
+.s-wrap{width:100%;position:relative;font: 12px/16px Tahoma,\5FAE\8F6F\96C5\9ED1; color: #9a3f00; overflow-x:hidden; overflow-y:hidden; }
+.s-wrap .s-wrap-inner{position:relative;z-index:2;width:1000px;margin:0 auto;}
+.s-wrap .s-maincont{position:relative;z-index:2;width:100%;}
+.s-wrap .s-bg{width:100%;position:absolute;top:0;left:0;z-index:1}
+.s-wrap .s-bg div{background:center 0 no-repeat;width:100%;height:320px;}
+.t-hd{display: block; text-indent: -9999em; font-size: 0;}
+.hid{display:block;font-size: 0;width: 0;height: 0; text-indent: -999em;}
+.spr,.dia-close{background: url(../images/spr.png) no-repeat;}
+/* 页面个性样式从这里开始：为了避免和组件冲突 个性样式需要降低样式的作用域，最好加上统一前缀*/
+.s-wrap .s-maincont{min-height:1000px;}/*设置下页面高度*/
+/*根据实际页面修改图片地址*/
+.s-wrap .s-bg .d1{background-image:url(../images/bg01.jpg);}
+.s-wrap .s-bg .d2{background-image:url(../images/bg02.jpg);}
+.s-wrap .s-bg .d3{background-image:url(../images/bg03.jpg);}
+.s-wrap .s-bg .d4{background-image:url(../images/bg04.jpg);}
+
+/*public*/
+.footer_wrp a,.footer_wrp .f_related_links,.footer_wrp .f_copyright,.footer_wrp .f_copyright span,.footer_wrp{color: #fff;}
+.footer_wrp .qqgame_logo{border-right: 1px solid #fff;}
+.footer_wrp a:hover{color: #fff;text-decoration: underline;}
+
+.tit{padding: 20px 0;text-align: center;font-size: 16px;}
+.intro{padding: 0 60px; text-align: center; margin-bottom: 20px;}
+
+/*keyframes*/
+@keyframes btn_game{
+    0%,100%{top: 495px;}
+    50%{top: 490px;}
+}
+
+
+/*hd*/
+.hd{height: 688px;overflow:hidden; position: relative;}
+.time{width: 480px; font-size: 20px; padding: 8px 0; text-align: center; margin: 170px auto 0; background: rgba(239,185,98,.4); color: #fff; border-radius: 20px;}
+.btn_game{width: 222px;height: 61px;background-position: 0 0;animation:btn_game 1s infinite; position: absolute;left: 50%; top: 495px; margin-left: -111px; z-index: 99;}
+.login{text-align: center; font-size: 18px; color: #fff; padding-top: 400px;}
+.login a{color: #efb962;margin-left: 10px;}
+.login a:hover{color: #d78d1e;}
+/*bd*/
+.bd{position: relative;}
+.act_1{width: 100%; height: 300px;background: url(images/act_bg.png); border-radius: 8px; overflow: hidden;}
+.main{text-align: center;}
+.main a{text-align: center; color: #7b4f28; font-size: 14px; margin: 0 10px;}
+.main a:hover{color: #7f3521;}
+/*dia default*/
+.dia{position: relative;}
+.dia-close{display: block; width: 30px; height: 30px;background-position: -110px -70px;right: -40px; top: 0; font-size: 0; transition:all 0.5s; position: absolute;}
+.dia-close:hover{transform: rotate(180deg);}
+.dia-con{background: #f0bc6a; border-radius: 5px; padding: 30px 20px;}
+.dia_tit {text-align: center;color: #7f3521; font-size: 22px; line-height: 22px; font-weight: bold; margin-bottom: 15px;}
+.dia_cent {max-width: 800px; min-width: 400px; line-height: 20px; color: #8f5e0f;}
+
+/*dia 我的奖品*/
+.dia_myjp{ margin: 0px auto; line-height: 40px; color: #d1573b;text-align: center;}
+.dia_myjp table{width: 100%; margin-bottom: 10px;}
+.dia_myjp table th,.dia_myjp table td{border: 1px solid #db972a;color: #7c5028; text-align: center;height: 40px;line-height: 40px;}
+.dia_myjp table th{font-weight: bold; font-size: 14px;}
+.dia_myjp table tfoot td{border: 0 none;}
+.dia_myjp table th.w1{width: 40%;}
+.dia_myjp table th.w2{width: 20%;}
+.dia_myjp table td{font-size: 14px; }
+.dia_myjp table td a{color: #7c5028; margin: 0 10px;}
+.dia_myjp table td a:hover{text-decoration: underline;}
+
+/*dia 收获地址*/
+.dia_add p{text-align: center; margin-bottom: 10px;}
+.dia_add table{width: 400px; margin: 0 auto;}
+.dia_add tr{height: 32px;}
+.dia_add tr td{height: 40px;text-align: center;}
+.dia_add tr td span{color: #f00;}
+.dia_add input,.dia_add select{width: 240px;height: 34px; background: #ac7c19; border: none; border-radius: 5px;text-indent: 10px; color: #fac879;}
+.dia_add td.sex{text-align: left; padding-left: 25px;}
+.dia_add td.sex label{margin-right: 8px;}
+.dia_add td.sex input{height: 14px;}
+.submitBtn{ margin: 15px auto 0; background: #825e14; border-radius: 5px; display: block; width: 181px; height: 53px;line-height: 52px;text-align: center; font-size: 27px; color: #fac879;}
+
+
+
+/*默认开始游戏弹窗 s*/
+.dialog-title {border-bottom: 1px solid #e1e1e1;color: #757d7f;font-size: 14px;font-weight: bold;height: 31px;line-height: 31px;margin-left: 6px;
+    margin-right: 6px;padding: 0 0 0 6px;
+}
+.dialog-header, .dialog-header-r, .dialog-footer-r, .dialog-footer {
+    background: rgba(0, 0, 0, 0) url("http://danji.3366.com/images/index/dialog_spr.png") no-repeat scroll 0 0;height: 32px;
+}
+.dialog-footer {
+    background-position: 0 -180px; height: 20px;
+}
+.dialog-footer-r {
+    background-position: right -240px;height: 20px;margin-left: 5px;
+}
+.dialog-header {
+    position: relative;
+}
+.dialog-header-r {
+    background-position: right -80px;
+    margin-left: 5px;
+}
+.dialog-close {
+    color: #aab2b6;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    width: 30px;
+}
+.dialog-close:hover {
+    text-decoration: none;
+}
+.dialog-body {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: #e1e1e1;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px;
+    color: #757d7f;
+}
+.dialog-msg {
+    padding: 15px 30px;
+}
+.dialog-msg-icon {
+    background: rgba(0, 0, 0, 0) url("http://danji.3366.com/images/index/dialog_spr.png") no-repeat scroll -60px -280px;
+    display: inline;
+    float: left;
+    height: 40px;
+    margin-right: 10px;
+    width: 40px;
+}
+.dialog-msg-fail .dialog-msg-icon {
+    background-position: 0 -280px;
+}
+.dialog-msg-content {
+    border-left: 1px solid #e1e1e1;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.dialog-btnbar {
+    text-align: center;
+}
+.dialog-btn, .dialog-btn-inner {
+    background: rgba(0, 0, 0, 0) url("http://danji.3366.com/images/index/dialog_spr.png") no-repeat scroll -440px -280px;
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+}
+.dialog-btn {
+    color: #fff;
+    font-weight: bold;
+    padding-left: 18px;
+    text-decoration: none;
+}
+.dialog-btn:hover {
+    text-decoration: none;
+}
+.dialog-btn-inner {
+    background-position: right -280px;
+    line-height: 26px;
+    padding-right: 18px;
+}
+.dialog em {
+    color: #ff8941;
+    font-style: normal;
+}
+.dialog-tips {
+    text-align: center;
+}
+.dialog-hall {
+    width: 584px;
+}
+.dialog-hall .dialog-msg {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+.dialog-hall .dialog-msg-title {
+    color: #84a0cb;
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 6px;
+}
+.dialog-hall .dialog-btnbar {
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.dialog-btn-xlarge {
+    background-position: -240px -340px;
+    height: 72px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 0;
+    width: 216px;
+}
+.dialog-btn-xlarge .dialog-btn-title, .dialog-btn-xlarge .dialog-btn-text {
+    display: block;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dialog-btn-xlarge .dialog-btn-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+    margin-top: 12px;
+}
+.dialog-btn-xlarge .dialog-btn-text {
+    color: #e8e8e8;
+    display: block;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.dialog-btn-large {
+    background-position: 0 -340px;
+    height: 60px;
+}
+.dialog-btn-large .dialog-btn-title {
+    margin-top: 16px;
+}

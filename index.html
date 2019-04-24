@@ -1,28 +1,76 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>鑵捐娓告垙鑱旂洘</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
-<style type="text/css">
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
-table{border-collapse:collapse;border-spacing:0}
-fieldset,img{border:0}
-address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
-ol,ul{list-style:none}
-caption,th{text-align:left}
-h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
-q:before,q:after{content:''}
-abbr,acronym{border:0;font-variant:normal}
-sup{vertical-align:text-top}
-sub{vertical-align:text-bottom}
-input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
-input,textarea,select{*font-size:100%}
-
-</style>
-
+<meta charset="gb2312">
+<title>标题 - QQ游戏-腾讯游戏</title>
+<meta name="Description" content="关键字-QQ游戏-腾讯游戏" />
+<meta name="keywords" content="关键字-QQ游戏-腾讯游戏" />
+<link rel="stylesheet" type="text/css" href="css/site.css">
 </head>
 <body>
-<div>aaabb</div>
+   <div class="s-wrap" id="s-wrap">
+      <div class="s-wrap-inner">
+         <div class="s-maincont" id="s-maincont">
+            <h1 class="hid">隐藏的标题</h1>
+            <div class="hd">
+               <p class="time">活动时间：2018年03月24日-3月30日</p>
+               <a href="javascript:;" class="btn_game spr t-hd">开始游戏</a>
+               <!--登录 s-->
+               <div class="login">
+                  <p id="unlogin">您好，请<a id="btn_qqlogin" href="javascript:void(0)" pgv="unlogin">[登录]</a></p>
+                  <p id="logined" style="display:none;">欢迎您 (<span id='login_qq_span'></span>)<a id="btn_logout" href="javascript:void(0)" pgv="logined">[注销]</a></p>
+               </div>
+               <!--登录 e-->
+            </div>
+            <div class="bd">
+              <!--模块插入区域 开始-->
+               <!--SetModel S-->
+               <!--模块插入区域 结束-->
+            </div>
+         </div>
+         <div class="s-bg">
+            <div class="bg1 d1"></div>
+            <div class="bg2 d2"></div>
+            <div class="bg3 d3"></div>
+            <div class="bg4 d4"></div>
+         </div>
+         <!-- 这里是背景横铺，这里的作用是使得在1000px内背景不移动 -->
+      </div>
+      
+      <div class="s-bg">
+         <div class="bg1 d1"></div>
+         <div class="bg2 d2"></div>
+         <div class="bg3 d3"></div>
+         <div class="bg4 d4"></div>
+      </div>
+      <!-- 这里是背景横铺 -->
+   </div>
+<script type="text/javascript" src="http://qqgame.qq.com/public/topbar/qgtb.js" charset="gb2312"></script>
+<script type="text/javascript" src="https://pingjs.qq.com/tcss.ping.https.js"></script>
+<script type="text/javascript" src="http://ossweb-img.qq.com/images/js/milo/util/jquery-1.11.3.min.js"></script>
+<script  type="text/javascript" charset="gb2312"  src="http://qqgame.qq.com/public/footer/footer_pt.js?c=b" id="lib_js_footer"></script>
+<script>
+//统计代码点击上报
+    function pgvAdd(){
+        $(document).click(function(e){
+            var _target=e.target;
+            var _tag=[];
+            do{
+                var pgv=_target.getAttribute('pgv');
+                if(pgv){
+                    _tag.push("ACT.a20000101default."+pgv);
+                }
+            }while(_target.parentNode && _target.parentNode!=document && (_target=_target.parentNode));
+            pgvSendClick({
+                'virtualDomain':'act.qqgame.qq.com',//如果是大厅域名改成act.qqgame.qq.com
+                'hottag':_tag.join(';')
+            });
+        });
+    };
+    if(typeof(pgvMain) == 'function'){
+        pgvMain();
+        pgvAdd();
+    }
+</script>
 </body>
 </html>
